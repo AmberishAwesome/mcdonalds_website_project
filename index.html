@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Redesign</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="McDonald's Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="hero-content">
+            <h1>Welcome to McDonald's</h1>
+            <p>Enjoy delicious meals at your fingertips.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Burgers</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/fries.jpg" alt="Fries">
+                <h3>Fries</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/drinks.png" alt="Drinks">
+                <h3>Drinks</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/desserts.jpg" alt="Desserts">
+                <h3>Desserts</h3>
+            </div>
+        </div>
+    </ul>
+        <h2>Find a McDonald's Near You</h2>
+        <p>Use our store locator to find the closest McDonald's restaurant.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25066.99645567524!2d-85.66787862201741!3d38.24761819927077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMcDonald&#39;s!5e0!3m2!1sen!2sus!4v1729091409236!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 McDonald's. All Rights Reserved.</p>
+    
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any inquiries or feedback!</p>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</section>

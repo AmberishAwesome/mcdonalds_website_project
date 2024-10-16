@@ -1,0 +1,159 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 15px 10px;
+    border: 2px solid #333; /* Border added for visibility */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Ensure the logo is visible */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    background-color: #fff; /* Background added for visibility */
+    padding: 10px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.hero-content {
+    text-align: center;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    background-color: #333; /* Fallback color if the image doesn’t load */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Highlighted McDonald's yellow */
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.menu {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #333; /* Border added for visibility */
+}
+
+.menu h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.locations {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    border: 2px solid #333; /* Border added for visibility */
+}
+
+.locations h2 {
+    font-size: 32px;
+    color: #ffcc00;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border: 2px solid #333; /* Border added for visibility */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
